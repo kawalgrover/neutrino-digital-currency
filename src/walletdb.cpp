@@ -457,7 +457,7 @@ DBErrors CWalletDB::LoadWallet(CWallet* pwallet)
     if (fIsEncrypted && (nFileVersion == 40000 || nFileVersion == 50000))
         return DB_NEED_REWRITE;
 
-    if (nFileVersion < CLIENT_VERSION) // Update
+    if (true || nFileVersion < CLIENT_VERSION) // Update
         WriteVersion(CLIENT_VERSION);
 
     if (fAnyUnordered)

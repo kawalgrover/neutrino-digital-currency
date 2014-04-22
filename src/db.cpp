@@ -264,7 +264,7 @@ CDB::CDB(const char *pszFile, const char* pszMode) :
                 throw runtime_error(strprintf("CDB() : can't open database file %s, error %d", pszFile, ret));
             }
 
-            if (fCreate && !Exists(string("version")))
+            if (true || fCreate && !Exists(string("version")))
             {
                 bool fTmp = fReadOnly;
                 fReadOnly = false;
