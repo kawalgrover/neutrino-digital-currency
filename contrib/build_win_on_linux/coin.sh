@@ -11,9 +11,9 @@ unzip -o $OUTDIR/qt-win32-4.8.3-gitian-r4.zip
 unzip -o $OUTDIR/boost-win32-1.54.0-gitian-r6.zip
 unzip -o $OUTDIR/bitcoin-deps-win32-gitian-r9.zip
 cd ~/deps
-rm -rf neutrino
+rm -rf neutrinocoin
 git clone https://github.com/neutrinocoin/neutrinocoin.git	# or just unpack a .tar archive
-cd ~/deps/neutrino
+cd ~/deps/neutrinocoin
 export PATH=$STAGING/host/bin:$PATH
 ln -sf $STAGING $HOME/qt
 

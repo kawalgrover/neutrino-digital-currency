@@ -8,9 +8,9 @@ mkdir -p ~/deps/deps
 cd ~/deps/deps
 
 # openssl
-wget http://mirrors.ibiblio.org/openssl/source/openssl-1.0.1h.tar.gz
-tar xzf openssl-1.0.1h.tar.gz
-cd openssl-1.0.1h
+wget http://mirrors.ibiblio.org/openssl/source/openssl-1.0.1i.tar.gz
+tar xzf openssl-1.0.1i.tar.gz
+cd openssl-1.0.1i
 ./Configure --cross-compile-prefix=$HOST- mingw --openssldir=$INSTALLPREFIX
 make
 make install_sw
